@@ -8,9 +8,9 @@
     :license: GPLv3, see LICENSE for more details.
 '''
 from inode import INode
-from qobuz.node import Flag, getNode
-from qobuz.api import api
-from qobuz.i8n import _
+from pyobuz.node import Flag, getNode
+from pyobuz.api import api
+from pyobuz.i8n import _
 
 
 class Node_public_playlists(INode):

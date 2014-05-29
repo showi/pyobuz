@@ -9,11 +9,11 @@
     :license: GPLv3, see LICENSE for more details.
 '''
 
-from qobuz.api import api
+from pyobuz.api import api
 from inode import INode
-from qobuz.node import getNode, Flag
-from qobuz.debug import warn, error
-from qobuz.i8n import _
+from pyobuz.node import getNode, Flag
+from pyobuz.debug import warn, error
+from pyobuz.i8n import _
 
 RECOS_TYPE_IDS = {
     1: 'new-releases',

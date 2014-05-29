@@ -9,8 +9,8 @@
 '''
 
 from inode import INode
-from qobuz.node import getNode, Flag
-from qobuz.i8n import _
+from pyobuz.node import getNode, Flag
+from pyobuz.i8n import _
 
 
 class Node_favorites(INode):

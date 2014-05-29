@@ -9,11 +9,11 @@
 '''
 
 from inode import INode
-from qobuz.node import getNode, Flag
-from qobuz.api import api
-from qobuz.debug import warn
-from qobuz.i8n import _
-from qobuz.cache import cache
+from pyobuz.node import getNode, Flag
+from pyobuz.api import api
+from pyobuz.debug import warn
+from pyobuz.i8n import _
+from pyobuz.cache import cache
 
 
 class Node_playlist(INode):

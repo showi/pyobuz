@@ -7,13 +7,13 @@
     :copyright: (c) 2012 by Joachim Basmaison, Cyril Leclerc
     :license: GPLv3, see LICENSE for more details.
 '''
-from node import Mode
-from qobuz.node import Flag, ErrorNoData
+from pyobuz.node.ibase import Mode
+from pyobuz.node import Flag, ErrorNoData
 from inode import INode
-from qobuz.debug import warn
-from qobuz.api import api
-from qobuz.settings import settings
-from qobuz.i8n import _
+from pyobuz.debug import warn
+from pyobuz.api import api
+from pyobuz.settings import settings
+from pyobuz.i8n import _
 
 
 class Node_track(INode):

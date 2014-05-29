@@ -8,12 +8,12 @@
     :license: GPLv3, see LICENSE for more details.
 '''
 
-from qobuz.debug import warn
-from qobuz.exception import InvalidType
+from pyobuz.debug import warn
+from pyobuz.exception import InvalidType
 from inode import INode
-from qobuz.api import api
-from qobuz.node import getNode, Flag
-from qobuz.i8n import _
+from pyobuz.api import api
+from pyobuz.node import getNode, Flag
+from pyobuz.i8n import _
 
 
 class Node_search(INode):

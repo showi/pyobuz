@@ -7,11 +7,11 @@
     :copyright: (c) 2012 by Joachim Basmaison, Cyril Leclerc
     :license: GPLv3, see LICENSE for more details.
 '''
-from qobuz.node import Flag, getNode
-from qobuz.debug import warn
-from qobuz.api import api
-from qobuz.cache import cache
-from qobuz.i8n import _
+from pyobuz.node import Flag, getNode
+from pyobuz.debug import warn
+from pyobuz.api import api
+from pyobuz.cache import cache
+from pyobuz.i8n import _
 from inode import INode
 
 

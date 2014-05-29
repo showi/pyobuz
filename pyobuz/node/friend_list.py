@@ -8,10 +8,10 @@
     :license: GPLv3, see LICENSE for more details.
 '''
 from inode import INode
-from qobuz.debug import log, warn
-from qobuz.api import api
-from qobuz.node import getNode, Flag
-from qobuz.i8n import _
+from pyobuz.debug import log, warn
+from pyobuz.api import api
+from pyobuz.node import getNode, Flag
+from pyobuz.i8n import _
 
 
 class Node_friend_list(INode):
