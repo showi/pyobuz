@@ -9,9 +9,7 @@
 '''
 __all__ = ['Mode', 'Flag', 'url2dict', 'dict2url']
 
-import pprint
 import collections
-import copy
 
 from urllib import quote, unquote
 

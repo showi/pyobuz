@@ -12,7 +12,7 @@ from pyobuz.api import api
 from pyobuz.node import Flag, getNode
 from pyobuz.node.recommendation import RECOS_TYPE_IDS
 from pyobuz.i8n import _
-from node.renderer.list import ListRenderer
+from pyobuz.renderer.list import ListRenderer
 from pyobuz.debug import log, warn
 
 
@@ -64,7 +64,6 @@ class Node_genre(INode):
                     continue
                 album_ids[aid] = 1
                 renderer.append(album)
-            #renderer.extend([track for track in lr])
         return True
 
     def fetch(self, renderer=None):

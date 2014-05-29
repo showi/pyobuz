@@ -12,7 +12,7 @@ import os
 import re
 import tempfile
 
-from pyobuz.debug import warn
+# from pyobuz.debug import warn
 
 
 def unlink(filename):

@@ -9,7 +9,8 @@ import xbmcgui
 import xbmc
 
 from inode import INode
-from node import getNode, Flag
+from pyobuz.node import getNode, Flag
+
 
 class Node_articles(INode):
     '''
@@ -21,7 +22,8 @@ class Node_articles(INode):
 
     def get_label(self):
         l = self.get_property('title')
-        if not l: return "Articles"
+        if not l:
+            return "Articles"
         return l
 
     def fetch(self, renderer=None):

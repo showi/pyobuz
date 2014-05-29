@@ -17,7 +17,7 @@ class SettingsProxy(object):
             - proxy: Our underlying dictionary (can be set after creation)
 
         ::methods:
-            - lock/unlock: When locked, trying to assign data to new key 
+            - lock/unlock: When locked, trying to assign data to new key
             raise a KeyError (We are locking our singleton)
     '''
     def __init__(self, proxy=None):

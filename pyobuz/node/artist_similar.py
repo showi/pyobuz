@@ -8,9 +8,9 @@
     :license: GPLv3, see LICENSE for more details.
 '''
 from inode import INode
-from qobuz.node import getNode, Flag
-from qobuz.api import api
-from qobuz.i8n import _
+from pyobuz.node import getNode, Flag
+from pyobuz.api import api
+from pyobuz.i8n import _
 
 
 class Node_artist_similar(INode):
@@ -25,8 +25,7 @@ class Node_artist_similar(INode):
     def fetch(self, renderer=None):
         data = api.get('/artist/getSimilarArtists', artist_id=self.nid,
                            offset=self.offset, limit=api.pagination_limit)
-        print "GOT DATA %s" % data
-        if not data:
+        if data is None:
             return False
         self.data = data
         return True
