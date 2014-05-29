@@ -10,6 +10,6 @@ clean:
 	find . -name "*.swp" -exec rm -fv '{}' \;
 	find . -name "*.swo" -exec rm -fv '{}' \;
 	rm -rfv .externalToolBuilders/
-	rm -rfv xbmc_qobuz.egg-info/ 
+	rm -rfv pyobuz.egg-info/ 
 
 .PHONY: clean
