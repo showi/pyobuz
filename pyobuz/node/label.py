@@ -1,6 +1,6 @@
 '''
     pyobuz.node.label
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~
 
     This file is part of pyobuz
 

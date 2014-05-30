@@ -1,6 +1,6 @@
 '''
     pyobuz.node.artist
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~
 
     This file is part of pyobuz
 

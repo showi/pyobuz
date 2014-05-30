@@ -1,6 +1,6 @@
 '''
     pyobuz.debug
-    ~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~
 
     This file is part of pyobuz
 

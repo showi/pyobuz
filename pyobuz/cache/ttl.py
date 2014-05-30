@@ -1,10 +1,12 @@
 '''
-    pyobuz.cache.qobuz
-    ~~~~~~~~~~~~~~~~~~
+    pyobuz.cache.ttl
+    ~~~~~~~~~~~~~~~~
 
     We are setting ttl here based on key type
     We are caching key who return data in dictionary so further request of
     the same key return data from memory.
+
+    This file is part of pyobuz
 
     :copyright: (c) 2012-2014 by Joachim Basmaison, Cyril Leclerc
     :license: GPLv3, see LICENSE for more details.

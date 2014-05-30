@@ -1,6 +1,6 @@
 '''
-    node.renderer.list
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    pyobuz.renderer.list
+    ~~~~~~~~~~~~~~~~~~~~
 
     This file is part of pyobuz
 

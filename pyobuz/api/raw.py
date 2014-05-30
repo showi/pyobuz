@@ -1,9 +1,11 @@
 '''
     pyobuz.api.raw
-    ~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~
 
     Our base api, all method are mapped like <endpoint>_<method>
     see Qobuz API on GitHub (https://github.com/Qobuz/api-documentation)
+
+    This file is part of pyobuz
 
     :copyright: (c) 2012-2014 by Joachim Basmaison, Cyril Leclerc
     :license: GPLv3, see LICENSE for more details.

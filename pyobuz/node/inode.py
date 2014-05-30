@@ -1,6 +1,6 @@
 '''
     pyobuz.node.inode
-    ~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~
 
     This file is part of pyobuz
 

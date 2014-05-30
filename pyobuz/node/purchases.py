@@ -1,6 +1,6 @@
 '''
     pyobuz.node.purchases
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~~
 
     This file is part of pyobuz
 

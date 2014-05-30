@@ -1,25 +1,20 @@
 '''
     pyobuz.api.easy
-    ~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~
 
     Add 'get' to pyobuz.api.raw, All requests made trough this method are
     cached (see pyobuz.cache.qobuz)
+
+    This file is part of pyobuz
 
     :copyright: (c) 2012-2014 by Joachim Basmaison, Cyril Leclerc
     :license: GPLv3, see LICENSE for more details.
 '''
 from pyobuz.debug import warn
 from pyobuz.cache import cache
-#from cache.sql import CacheSQL
 from raw  import QobuzApiRaw
 from pyobuz.settings import settings
-from pyobuz import DEBUG
-
-
-class InvalidQuery(Exception):
-    pass
-
-#sql = CacheSQL()
+from pyobuz.exception import InvalidQuery
 
 
 class QobuzApiEasy(QobuzApiRaw):
@@ -87,7 +82,7 @@ class QobuzApiEasy(QobuzApiRaw):
         path = path[1:]
         if path.endswith('/'):
             raise InvalidQuery('Invalid trailing << / >>')
-        if DEBUG:
+        if settings.get('debug'):
             print "Qobuz/Api %s %s" % (path, ka)
         xpath = path.split('/')
         if len(xpath) < 1:

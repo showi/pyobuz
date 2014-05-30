@@ -1,5 +1,5 @@
 '''
-    pyobuz.node.similar_artist
+    pyobuz.node.artist_similar
     ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     This file is part of pyobuz

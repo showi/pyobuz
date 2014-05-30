@@ -1,6 +1,6 @@
 '''
     pyobuz.node.track
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~
 
     This file is part of pyobuz
 

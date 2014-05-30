@@ -1,6 +1,6 @@
 '''
-    pyobuz.node.album_by_artist
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    pyobuz.node.albums_by_artist
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     This file is part of pyobuz
 

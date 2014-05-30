@@ -1,6 +1,6 @@
 '''
     pyobuz.node.friend
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~
 
     This file is part of pyobuz
 

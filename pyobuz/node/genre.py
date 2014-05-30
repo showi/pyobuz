@@ -1,6 +1,6 @@
 '''
     pyobuz.node.genre
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~
 
     This file is part of pyobuz
 

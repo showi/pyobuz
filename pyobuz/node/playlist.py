@@ -1,6 +1,6 @@
 '''
     pyobuz.node.playlist
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~
 
     This file is part of pyobuz
 

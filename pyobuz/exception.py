@@ -1,6 +1,6 @@
 '''
     pyobuz.exception
-    ~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~
 
     This file is part of pyobuz
 
@@ -22,4 +22,12 @@ class MissingParameter(QobuzException):
 
 
 class InvalidType(QobuzException):
+    pass
+
+
+class ErrorNoData(Exception):
+    pass
+
+
+class InvalidQuery(Exception):
     pass

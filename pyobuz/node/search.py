@@ -1,6 +1,6 @@
 '''
     pyobuz.node.search
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~
 
     This file is part of pyobuz
 

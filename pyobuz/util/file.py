@@ -1,6 +1,6 @@
 '''
-    fileutil
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    pyobuz.util.file
+    ~~~~~~~~~~~~~~~~
 
     This file is part of pyobuz
 

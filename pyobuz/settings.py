@@ -1,6 +1,6 @@
 '''
     pyobuz.settings
-    ~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~
 
     This file is part of pyobuz
 
@@ -65,6 +65,7 @@ settings['cache_duration_long'] = 60 * 24
 settings['cache_duration_middle'] = 60 * 12
 settings['stream_format'] = 5
 settings['stream_type'] = 'flac'
+settings['debug'] = True
 settings.lock()
 
 if __name__ == '__main__':

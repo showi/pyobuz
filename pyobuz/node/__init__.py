@@ -1,6 +1,6 @@
 '''
     pyobuz.node
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~
 
     This file is part of pyobuz
 
@@ -8,7 +8,8 @@
     :license: GPLv3, see LICENSE for more details.
 '''
 __all__ = ['getNode', 'Flag']
-from flag import Flag
+from pyobuz.node.flag import Flag
+
 
 def getNode(qnt, parameters):
         ''' Caching import ??? '''
@@ -25,24 +26,23 @@ def getNode(qnt, parameters):
 #        except Exception as e:
 #            print repr(e)
 #            pass
-        """ 
-            Initializing our new node 
-            - no parent 
-            - parameters 
+        """
+            Initializing our new node
+            - no parent
+            - parameters
             """
         node = Module(parameters)
         return node
 
+
 def mixin_factory(name, base, mixin):
     return type(name, (base, mixin), {})
 
+
 def module_import(path, name, **ka):
         """ from node.foo import Node_foo """
-        modPackage = __import__(path, globals(), 
+        modPackage = __import__(path, globals(),
                                 locals(), [name], -1)
         """ Getting Module from Package """
         Module = getattr(modPackage, name)
         return Module
-
-class ErrorNoData(Exception):
-    pass

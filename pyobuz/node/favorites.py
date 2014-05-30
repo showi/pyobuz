@@ -1,6 +1,6 @@
 '''
     pyobuz.node.favorites
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~~
 
     This file is part of pyobuz
 

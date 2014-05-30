@@ -1,6 +1,6 @@
 '''
     pyobuz.i8n
-    ~~~~~~~~~
+    ~~~~~~~~~~
 
     This file is part of pyobuz
 

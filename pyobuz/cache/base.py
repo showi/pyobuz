@@ -1,11 +1,13 @@
 '''
-    pyobuz.storage.base
-    ~~~~~~~~~~~~~~~~~~
+    pyobuz.cache.base
+    ~~~~~~~~~~~~~~~~~
 
     A class to handle caching
 
     ::cached decorator that will cache a function call based on his
     positional and named parameter
+
+    This file is part of pyobuz
 
     :copyright: (c) 2012-2014 by Joachim Basmaison, Cyril Leclerc
     :license: GPLv3, see LICENSE for more details.

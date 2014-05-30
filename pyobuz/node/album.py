@@ -1,6 +1,6 @@
 '''
     pyobuz.node.album
-    ~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~
 
     This file is part of pyobuz
 

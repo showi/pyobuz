@@ -1,6 +1,6 @@
 '''
     node.renderer.base
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~
 
     This file is part of pyobuz
 
@@ -8,6 +8,7 @@
     :license: GPLv3, see LICENSE for more details.
 '''
 from collections import deque
+
 
 class BaseRenderer(deque):
 
