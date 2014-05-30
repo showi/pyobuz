@@ -28,7 +28,7 @@ class QobuzApiRaw(object):
         self.appid = "285473059"  # XBMC
         # self.appid = "214748364" # :]
         self.version = '0.2'
-        self.baseUrl = 'http://www.pyobuz.com/api.json/'
+        self.baseUrl = 'http://www.qobuz.com/api.json/'
 
         self.user_auth_token = None
         self.user_id = None
