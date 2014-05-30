@@ -25,11 +25,10 @@ socket.timeout = 5
 class QobuzApiRaw(object):
 
     def __init__(self):
-        self.appid = "285473059"  # XBMC
-        # self.appid = "214748364" # :]
+        """ You must set appid before use
+        """
         self.version = '0.2'
         self.baseUrl = 'http://www.qobuz.com/api.json/'
-
         self.user_auth_token = None
         self.user_id = None
         self.error = None
@@ -39,7 +38,16 @@ class QobuzApiRaw(object):
         self.statContentSizeTotal = 0
         self.statTotalRequest = 0
         self.error = None
-        self.__set_s4()
+
+    def set_appid(self, appid):
+        self._appid = appid
+        if self._appid is not None:
+            self.__set_s4()
+
+    def get_appid(self):
+        return self._appid
+
+    appid = property(get_appid, set_appid)
 
     def _serror(self, msg="", url="", params={}, json=""):
         import copy
