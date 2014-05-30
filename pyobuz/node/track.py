@@ -8,12 +8,13 @@
     :license: GPLv3, see LICENSE for more details.
 '''
 from pyobuz.node.ibase import Mode
-from pyobuz.node import Flag, ErrorNoData
+from pyobuz.node import Flag
 from inode import INode
 from pyobuz.debug import warn
 from pyobuz.api import api
 from pyobuz.settings import settings
 from pyobuz.i8n import _
+from pyobuz.exception import  ErrorNoData
 
 
 class Node_track(INode):
@@ -24,7 +25,6 @@ class Node_track(INode):
         super(Node_track, self).__init__(parameters)
         self.kind = Flag.TRACK
         self.is_folder = False
-#        self.is_playable = True
         self.content_type = 'songs'
         self.qobuz_context_type = 'playlist'
         self.status = None
@@ -43,19 +43,11 @@ class Node_track(INode):
         return True
 
     def populate(self, renderer=None):
-#        self.append(self)
         return True
 
     def url(self, **ka):
         if not 'mode' in ka:
             ka['mode'] = Mode.PLAY
-#        if 'asLocalURL' in ka and ka['asLocalURL']:
-#            return 'http://127.0.0.1:33574/qobuz/%s/%s/%s.mpc' % (
-#                    str(self.get_artist_id()),
-#                    str(self.parent.nid),
-#                    str(self.nid))
-#        if not 'mode' in ka:
-#            ka['mode'] = Mode.PLAY
         return super(Node_track, self).url(**ka)
 
     def get_label(self, sFormat="%a - %t"):
@@ -257,10 +249,10 @@ class Node_track(INode):
             mime = 'audio/mpeg'
         return mime
 
-    """ We add this information only when playing item because it require
-        us to fetch data from Qobuz
-    """
     def item_add_playing_property(self, item):
+        """ We add this information only when playing item because it require
+            us to fetch data from Qobuz
+        """
         mime = self.get_mimetype()
         if not mime:
             warn(self, "Cannot set item streaming url")
@@ -268,18 +260,3 @@ class Node_track(INode):
         item.setProperty('mimetype', mime)
         item.setPath(self.get_streaming_url())
         return True
-
-#    def attach_context_menu(self, item, menu):
-#        if self.parent and (self.parent.nt & Flag.PLAYLIST == Flag.PLAYLIST):
-#            colorCaution = getSetting('item_caution_color')
-#            url = self.parent.make_url(nt=Flag.PLAYLIST,
-#                id=self.parent.nid,
-#                qid=self.get_playlist_track_id(),
-#                nm='gui_remove_track',
-#                mode=Mode.VIEW)
-#            menu.add(path='playlist/remove',
-#                     label=lang(30073),
-#                     cmd=runPlugin(url), color=colorCaution)
-#
-#        ''' Calling base class '''
-#        super(Node_track, self).attach_context_menu(item, menu)
