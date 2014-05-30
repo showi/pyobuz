@@ -1,11 +1,11 @@
 '''
-    qobuz.api.easy
+    pyobuz.api.easy
     ~~~~~~~~~~~~~~~~~~
 
-    Add 'get' to qobuz.api.raw, All requests made trough this method are
-    cached (see qobuz.cache.qobuz)
+    Add 'get' to pyobuz.api.raw, All requests made trough this method are
+    cached (see pyobuz.cache.qobuz)
 
-    :copyright: (c) 2012 by Joachim Basmaison, Cyril Leclerc
+    :copyright: (c) 2012-2014 by Joachim Basmaison, Cyril Leclerc
     :license: GPLv3, see LICENSE for more details.
 '''
 from pyobuz.debug import warn

@@ -2,9 +2,9 @@
     node.renderer.list
     ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    This file is part of qobuz-xbmc
+    This file is part of pyobuz
 
-    :copyright: (c) 2012 by Joachim Basmaison, Cyril Leclerc
+    :copyright: (c) 2012-2014 by Joachim Basmaison, Cyril Leclerc
     :license: GPLv3, see LICENSE for more details.
 '''
 from base import BaseRenderer

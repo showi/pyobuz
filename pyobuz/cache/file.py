@@ -1,10 +1,10 @@
 '''
-    qobuz.storage.file
+    pyobuz.storage.file
     ~~~~~~~~~~~~~~~~~~
 
     Class that implement caching to disk
 
-    :copyright: (c) 2012 by Joachim Basmaison, Cyril Leclerc
+    :copyright: (c) 2012-2014 by Joachim Basmaison, Cyril Leclerc
     :license: GPLv3, see LICENSE for more details.
 '''
 import hashlib

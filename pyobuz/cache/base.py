@@ -1,5 +1,5 @@
 '''
-    qobuz.storage.base
+    pyobuz.storage.base
     ~~~~~~~~~~~~~~~~~~
 
     A class to handle caching
@@ -7,7 +7,7 @@
     ::cached decorator that will cache a function call based on his
     positional and named parameter
 
-    :copyright: (c) 2012 by Joachim Basmaison, Cyril Leclerc
+    :copyright: (c) 2012-2014 by Joachim Basmaison, Cyril Leclerc
     :license: GPLv3, see LICENSE for more details.
 '''
 from time import time

@@ -1,11 +1,11 @@
 '''
-    qobuz.api.raw
+    pyobuz.api.raw
     ~~~~~~~~~~~~~~~~~~
 
     Our base api, all method are mapped like <endpoint>_<method>
     see Qobuz API on GitHub (https://github.com/Qobuz/api-documentation)
 
-    :copyright: (c) 2012 by Joachim Basmaison, Cyril Leclerc
+    :copyright: (c) 2012-2014 by Joachim Basmaison, Cyril Leclerc
     :license: GPLv3, see LICENSE for more details.
 '''
 import sys
@@ -28,7 +28,7 @@ class QobuzApiRaw(object):
         self.appid = "285473059"  # XBMC
         # self.appid = "214748364" # :]
         self.version = '0.2'
-        self.baseUrl = 'http://www.qobuz.com/api.json/'
+        self.baseUrl = 'http://www.pyobuz.com/api.json/'
 
         self.user_auth_token = None
         self.user_id = None
@@ -74,7 +74,7 @@ class QobuzApiRaw(object):
         """appid and associated secret is for this app usage only
         Any use of the API implies your full acceptance of the
         General Terms and Conditions
-        (http://www.qobuz.com/apps/api/QobuzAPI-TermsofUse.pdf)
+        (http://www.pyobuz.com/apps/api/QobuzAPI-TermsofUse.pdf)
         """
         import binascii
         from itertools import izip, cycle
@@ -249,7 +249,7 @@ class QobuzApiRaw(object):
     def track_resportStreamingStart(self, track_id):
         # Any use of the API implies your full acceptance
         # of the General Terms and Conditions
-        # (http://www.qobuz.com/apps/api/QobuzAPI-TermsofUse.pdf)
+        # (http://www.pyobuz.com/apps/api/QobuzAPI-TermsofUse.pdf)
         params = {'user_id': self.user_id, 'track_id': track_id}
         return self._api_request(params, '/track/reportStreamingStart')
 

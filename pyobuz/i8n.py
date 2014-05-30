@@ -1,10 +1,10 @@
 '''
-    qobuz.i8n
+    pyobuz.i8n
     ~~~~~~~~~
 
-    This file is part of qobuz-xbmc
+    This file is part of pyobuz
 
-    :copyright: (c) 2012 by Joachim Basmaison, Cyril Leclerc
+    :copyright: (c) 2012-2014 by Joachim Basmaison, Cyril Leclerc
     :license: GPLv3, see LICENSE for more details.
 '''
 import os

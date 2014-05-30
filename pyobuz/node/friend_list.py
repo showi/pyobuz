@@ -1,10 +1,10 @@
 '''
-    qobuz.node.friend_list
+    pyobuz.node.friend_list
     ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-    This file is part of qobuz-xbmc
+    This file is part of pyobuz
 
-    :copyright: (c) 2012 by Joachim Basmaison, Cyril Leclerc
+    :copyright: (c) 2012-2014 by Joachim Basmaison, Cyril Leclerc
     :license: GPLv3, see LICENSE for more details.
 '''
 from inode import INode
@@ -34,7 +34,7 @@ class Node_friend_list(INode):
 
     def fetch(self, renderer=None):
         node = getNode(Flag.FRIEND, self.parameters)
-        node.create('qobuz.com')
+        node.create('pyobuz.com')
         return True
 
     def populate(self, renderer=None):
