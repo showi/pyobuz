@@ -31,3 +31,7 @@ class ErrorNoData(Exception):
 
 class InvalidQuery(Exception):
     pass
+
+
+class AppendItemError(QobuzException):
+    pass

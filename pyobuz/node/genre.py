@@ -53,7 +53,7 @@ class Node_genre(INode):
         for gtype in RECOS_TYPE_IDS:
             lr = ListRenderer()
             lr.depth = -1
-            lr.whiteFlag = Flag.ALBUM | Flag.TRACK
+            lr.whiteFlag = Flag.ALBUM | Flag.RECOMMENDATION
             lr.blackFlag = Flag.TRACK | Flag.ALBUM
             node = getNode(
                 Flag.RECOMMENDATION, {'genre-id': gid, 'genre-type': gtype})
@@ -74,7 +74,7 @@ class Node_genre(INode):
             return True
         self.data = data
         g = self.data['genres']
-        lvl = 0
+        lvl = 1
         try:
             lvl = int(g['parent']['level'])
         except Exception as e:

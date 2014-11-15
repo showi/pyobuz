@@ -68,6 +68,10 @@ class Node_playlist(INode):
         for track in self.data[self.items_path]['items']:
             node = getNode(Flag.TRACK, self.parameters)
             node.data = track
+            node.add_action('delete_track',
+                            label=_('Delete from playlist'),
+                            target=Flag.PLAYLIST, target_nid=node.nid)
+
             self.append(node)
         return True
 
@@ -399,6 +403,19 @@ class Node_playlist(INode):
             self.delete_cache()
             return True
         return False
+
+    def delete_track(self, track):
+        print "Deleting track %s in playlist %s" % (track.nid, self.nid)
+#         res = api.playlist_deleteTracks(playlist_id=self.nid,
+#                                        playlist_track_ids=track.nid)
+        import pprint
+        res = False
+        print pprint.pformat(res)
+        if res is True:
+            self.delete_cache()
+            return True
+        return False
+
 #    def subscribe(self):
 #        if api.playlist_subscribe(playlist_id=self.nid):
 #            notifyH(lang(42001), lang(42005))

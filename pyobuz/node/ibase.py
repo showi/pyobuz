@@ -91,9 +91,10 @@ class Commander(object):
             tmp = node
             node = self.getNode(tkind, node.parameters)
             target = tmp
+        target_nid = node.get_parameter('target_nid', delete=True)
         nodename = self.flag.to_s(node.kind)
         return getattr(self, '%s_%s' % (nodename, action))(renderer, node,
-                                                           target)
+                                                           target, target_nid)
 
 
 class BaseNode(collections.deque):
@@ -207,8 +208,7 @@ class BaseNode(collections.deque):
             if child.kind & renderer.whiteFlag == child.kind:
                 renderer.append(child)
             else:
-                print u"Rejecting node: %s" % child.get_label().encode('ascii',
-                                                                    'replace')
+                print "Rejecting node: %s" #% child.get_label().encode('ascii')
             child.populating(renderer)
         if hasattr(self, 'populating_hook_after_traversal'):
             self.populating_hook_after_traversal(renderer)
